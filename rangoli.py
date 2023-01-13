@@ -1,5 +1,6 @@
 # https://www.hackerrank.com/challenges/alphabet-rangoli/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
 import string
+
 en_chars = string.ascii_lowercase
 
 
@@ -8,7 +9,7 @@ def print_rangoli(size):
     for i in range(n):
         half_line = en_chars[i:size]
         full_line = half_line[::-1] + half_line[1:]
-        half_bottom.append('-'.join(full_line).center(4*size-3, '-'))
+        half_bottom.append('-'.join(full_line).center(4 * size - 3, '-'))
 
     rangoli = half_bottom[::-1] + half_bottom[1:]
     print('\n'.join(rangoli))

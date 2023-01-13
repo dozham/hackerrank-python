@@ -10,8 +10,8 @@ import string
 
 # Complete the solve function below.
 def solve(s):
-   s = s.split(" ")
-   return(" ".join(i.capitalize() for i in s))
+    s = s.split(" ")
+    return " ".join(i.capitalize() for i in s)
 
 
 if __name__ == '__main__':
